@@ -13,3 +13,17 @@ print(list(numbers[3:11]))
 
 ## 4는 인덱스 3
 ## 10은 포함 안 되니까 11 → 인덱스 10
+
+`1000 <= N < 3000`
+#  =< 안됨
+# => 안됨
+# <, > 먼저 쓰고 =
+
+````
+A, N = map(int, input().split())
+for i in range(N):
+    A += N  # Add N to A and reassign the new value to A
+    print(A)
+````
+`A+N`으로 작성하게 되면 값 고정으로 내려오게됨
+=> A값에 N만큼 증가하게 하려면 +=으로 작성, 위에 for 문으로 N 만큼 반복되므로 변동된 A값이 N만큼 출력되게 됨
