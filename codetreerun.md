@@ -1,4 +1,4 @@
-/code
+```
 n = int(input())
 
 arr = [0] * 201   # 음수 대비해서 넉넉히
@@ -17,7 +17,7 @@ for _ in range(n):
             cur += 1
     else:  # L
         for _ in range(x):
-            cur -= 1
+            cur -= 1 # 순서 유의 좌측은 cur 먼저
             arr[cur] += 1
 
 # 2번 이상 지난 구간 세기
@@ -26,3 +26,5 @@ for i in arr:
         cnt += 1
 
 print(cnt)
+```
+offset 설정해서 위치를 추가로 기록하는 것이 중요함
