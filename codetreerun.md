@@ -89,7 +89,7 @@ print(w, b, g)
 ```
 꺼져라 그냥
 
-'''
+```
 n = int(input())
 
 arr = [0] * 200001
@@ -121,4 +121,4 @@ for i in arr:
         black += 1
 
 print(white, black)
-'''
+```
