@@ -88,3 +88,37 @@ for c in color:
 print(w, b, g)
 ```
 꺼져라 그냥
+
+'''
+n = int(input())
+
+arr = [0] * 200001
+cur = 100000
+
+for _ in range(n):
+    x, d = input().split()
+    x = int(x)
+
+    if d == 'R':
+        for _ in range(x):
+            arr[cur] = 2
+            cur += 1
+        cur -= 1 # 마지막 위치에 서있어야해서 하나 뺌
+
+    else:  # L
+        for _ in range(x):
+            arr[cur] = 1
+            cur -= 1
+        cur += 1 # 마지막 위치에 서있어야해서 하나 더함
+
+white = 0
+black = 0
+
+for i in arr:
+    if i == 1:
+        white += 1
+    elif i == 2:
+        black += 1
+
+print(white, black)
+'''
